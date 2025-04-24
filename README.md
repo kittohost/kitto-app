@@ -1,0 +1,2 @@
+# kitto-app
+host web
