@@ -35,4 +35,56 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+npm -v;
+// src/pages/HomePage.js
+import React from 'react';
+import './HomePage.css';
+import { Link } from 'react-router-dom';
+
+export default function HomePage() {
+  return (
+    <div className="home-wrapper">
+      <div className="home-content">
+        <h1>Welcome to Kitto</h1>
+        <p>Your guests deserve more than just a clean bed.  
+           They deserve an experience.</p>
+        <Link to="/boxes">
+          <button className="explore-btn">Explore Hosting Boxes</button>
+        </Link>
+      </div>
+      <div className="home-image"></div>
+    </div>
+  );
+}
+// src/pages/HomePage.css
+home-wrapper
+  display: flex;
+  flex-direction;
+  align-items;
+  justify-content;
+  height: 100;
+  background-color ;
+
+home-content 
+  text-align ;
+  margin-bottom;
+
+home-content 
+  font-size;
+  margin-bottom ;
+
+home-content 
+  font-size1;
+  margin-bottom;
+
+explore-btn 
+  padding: 10 ;
+  font-size;
+  background-color ;
+  color: white;
+  border: none;
+  border-radius;
+  cursor: pointer;
+
+explore-btn 
+  background-colorgb(103, 164, 112);

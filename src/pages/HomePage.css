@@ -36,4 +36,54 @@
     font-size: 0.9rem;
     color: #999;
   }
-  
+  /* src/pages/HomePage.css */
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdfaf4;
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  color: #355e3b;
+  margin-bottom: 16px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: #5f5f5f;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.explore-btn {
+  background-color: #355e3b;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.explore-btn:hover {
+  background-color: #2e4d2e;
+}
+
+.home-image {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}

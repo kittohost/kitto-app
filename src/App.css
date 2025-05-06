@@ -16,7 +16,7 @@ body {
   }
   
   .header p {
-    color: #666;
+    color: #607d2a;
     font-size: 18px;
     margin-bottom: 40px;
   }
@@ -29,10 +29,10 @@ body {
   }
   
   .box {
-    background-color: white;
+    background-color: rgb(100, 159, 169);
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(151, 200, 99, 0.08);
     font-size: 18px;
     font-weight: 500;
     color: #333;
