@@ -1,45 +1,90 @@
+/* Global Styles */
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to bottom, #f5f3eb, #e2f0dc);
+    color: #2f3e46;
+    overflow-x: hidden;
   }
   
-  .app {
+  /* Smooth Entrance Animation */
+  .fade-in {
+    animation: fadeIn 1.5s ease-in forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Home Wrapper */
+  .home-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/nature-background.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: 40px;
+    padding: 2rem;
   }
   
-  .header h1 {
-    font-size: 36px;
-    color: #222;
-    margin-bottom: 10px;
+  .home-wrapper h1 {
+    font-size: 3rem;
+    color: #264653;
+    margin-bottom: 1rem;
   }
   
-  .header p {
-    color: #607d2a;
-    font-size: 18px;
-    margin-bottom: 40px;
+  .home-wrapper p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    color: #4a5c58;
+    margin-bottom: 2rem;
   }
   
-  .boxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    padding: 0 20px;
+  /* Button Styles */
+  .button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    background-color: #a3c4a8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .box {
-    background-color: rgb(100, 159, 169);
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 12px rgba(151, 200, 99, 0.08);
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
+  .button:hover {
+    background-color: #8eb893;
+  }
+  
+  /* Box Cards */
+  .box-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    width: 300px;
+    text-align: left;
     transition: transform 0.3s ease;
   }
   
-  .box:hover {
-    transform: translateY(-5px);
+  .box-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .box-card h2 {
+    color: #264653;
+    margin-bottom: 0.5rem;
+  }
+  
+  .box-card p {
+    color: #555;
   }
   
